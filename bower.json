@@ -1,0 +1,29 @@
+{
+  "name": "jquery.editable",
+  "version": "0.0.0",
+  "description": "click to edit",
+  "main": "jquery.editable.js",
+  "dependencies": {
+    "jquery": ">=1.1.0"
+  },
+  "homepage": "https://github.com/giladgray/jquery.editable",
+  "authors": [
+    "Gilad Gray <giladgray@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jquery",
+    "editable"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.coffee",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
