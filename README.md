@@ -31,7 +31,7 @@ The following HTML structure is the most basic requirement for using this plugin
 </div>
 ```
 
-The plugin can be enabled by calling `.editable()` on a jQuery selector, or preferably by using the `data-` attribute API described below.
+The plugin can be enabled by calling `.editable()` on a jQuery selector, or preferably by using the `data-toggle` attribute API described below.
 
 ```js
 $('.editable').editable()
@@ -53,16 +53,6 @@ Currently, no options are supported via JavaScript. Customize behavior using the
 
 Adding `data-toggle="editable"` attribute to the parent element will automatically enable the plugin when any element inside is clicked upon.
 
-#### `data-clickable-to-edit`
-```html
-<div class="editable" data-toggle="editable">
-    <span class="value" data-clickable-to-edit=false>Click on the icon to start editing!</span>
-    <span class="edit"><input type="text" value="Enter new text"></span>
-    <span class="fa fa-pencil editable-trigger"></span>
-</div>
-```
-Adding `data-clickable-to-edit` attribute to any child element will prevent entering edit state when clicking on that element.
-
 #### `data-type-update`
 
 ```html
@@ -74,6 +64,16 @@ Adding `data-clickable-to-edit` attribute to any child element will prevent ente
 ```
 
 If the parent element has the `data-type-update` attribute as well, then after every change of the value an `update` event will be fired. This allows for responding to changes during typing.
+
+#### `data-clickable-to-edit`
+```html
+<div class="editable" data-toggle="editable">
+    <span class="value" data-clickable-to-edit=false>Click on the icon to start editing!</span>
+    <span class="edit"><input type="text" value="Enter new text"></span>
+    <span class="fa fa-pencil editable-trigger"></span>
+</div>
+```
+Adding `data-clickable-to-edit` attribute to any child element will prevent entering edit state when clicking on that element.
 
 ## Events
 
