@@ -1,6 +1,6 @@
 {
   "name": "jquery.editable",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "click to edit",
   "main": "jquery.editable.js",
   "dependencies": {
