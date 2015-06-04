@@ -106,7 +106,7 @@ class Editable
 
   cancel: =>
     @$value.text(@lastValue)
-    @$el.removeClass('editing')
+    @$el.removeClass('editing').trigger 'cancel', @lastValue
     @$input.val(@lastValue)
     @lastValue = null
 

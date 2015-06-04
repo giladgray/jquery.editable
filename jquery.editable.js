@@ -138,7 +138,7 @@ for responding to changes during typing.
 
     Editable.prototype.cancel = function() {
       this.$value.text(this.lastValue);
-      this.$el.removeClass('editing');
+      this.$el.removeClass('editing').trigger('cancel', this.lastValue);
       this.$input.val(this.lastValue);
       return this.lastValue = null;
     };
